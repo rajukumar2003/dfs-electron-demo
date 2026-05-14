@@ -1,10 +1,10 @@
 # DFS Dashboard — Electron Demo
 
-Throwaway Electron shell that validates the **Windows install + first-launch UX** for the DFS offline dashboard packaging approach. Not the real app — a minimal Cloudify-branded window so we can hand Steve a `.exe` and see exactly what DFS will see on day one.
+Throwaway Electron shell that validates the **Windows install + first-launch UX** for the DFS offline dashboard packaging approach. Not the real app — a minimal Cloudify-branded window so we can hand User a `.exe` and see exactly what DFS will see on day one.
 
 ## What this proves
 
-- Steve double-clicks the installer → walks through the unsigned-installer SmartScreen flow (*"More info → Run anyway"*) → installs → launches → sees a working window.
+- User double-clicks the installer → walks through the unsigned-installer SmartScreen flow (*"More info → Run anyway"*) → installs → launches → sees a working window.
 - A Cloudify-branded window opens via the Windows Start menu / desktop shortcut.
 - Uninstall via Add/Remove Programs works cleanly.
 
@@ -27,7 +27,7 @@ git push origin main          # → triggers .github/workflows/build-windows.yml
 
 Then open the GitHub Actions tab, wait ~3 min, download the artifact `dfs-dashboard-demo-windows`. Inside is `DFS Dashboard Demo-0.1.0-Setup.exe`.
 
-## The flow Steve walks through on Windows
+## The flow User walks through on Windows
 
 1. Double-click `DFS Dashboard Demo-0.1.0-Setup.exe`
 2. "Windows protected your PC" → **More info** → **Run anyway**
