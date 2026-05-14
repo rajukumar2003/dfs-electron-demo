@@ -1,13 +1,13 @@
 :root {
-  --bg: #0a0e1a;
-  --bg-elevated: rgba(255, 255, 255, 0.04);
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
-  --green: #5be57a;
-  --blue: #4ecdf9;
-  --pink: #f95987;
-  --radius: 14px;
+  --bg: #f5f4f0;
+  --bg-elevated: #ffffff;
+  --border: #e2dfd7;
+  --text: #1b2030;
+  --text-muted: #6b7280;
+  --green: #16a34a;
+  --blue: #2563eb;
+  --pink: #db2777;
+  --radius: 12px;
 }
 
 * {
@@ -27,21 +27,9 @@ html, body {
   overflow: hidden;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(800px 400px at 15% -10%, rgba(91, 229, 122, 0.10), transparent 60%),
-    radial-gradient(900px 500px at 90% 110%, rgba(249, 89, 135, 0.10), transparent 60%),
-    radial-gradient(700px 400px at 50% 50%, rgba(78, 205, 249, 0.06), transparent 60%);
-  pointer-events: none;
-  z-index: 0;
-}
 
 .shell {
   position: relative;
-  z-index: 1;
   height: 100vh;
   max-width: 1100px;
   margin: 0 auto;
@@ -85,19 +73,16 @@ body::before {
 }
 
 .hero-icon {
-  width: 72px;
-  height: 72px;
-  filter: drop-shadow(0 8px 24px rgba(78, 205, 249, 0.25));
+  width: 68px;
+  height: 68px;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.10));
 }
 
 .hero h1 {
   font-size: 38px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--green) 0%, var(--blue) 50%, var(--pink) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text);
 }
 
 .lead {
@@ -120,12 +105,14 @@ body::before {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  transition: transform 160ms ease, border-color 160ms ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.14);
+  border-color: #cbc8bf;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.09);
 }
 
 .card h2 {
@@ -145,17 +132,17 @@ body::before {
   font-family: "SF Mono", "Cascadia Code", Consolas, monospace;
   font-size: 12.5px;
   padding: 1px 6px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   color: var(--text);
 }
 
 .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  box-shadow: 0 0 12px currentColor;
+  opacity: 0.85;
 }
 
 .dot-green { background: var(--green); color: var(--green); }
@@ -179,6 +166,5 @@ body::before {
 }
 
 .muted {
-  opacity: 0.7;
-  font-style: italic;
+  opacity: 0.65;
 }

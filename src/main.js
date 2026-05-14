@@ -7,7 +7,7 @@ function createWindow() {
     height: 760,
     minWidth: 900,
     minHeight: 600,
-    backgroundColor: "#0a0e1a",
+    backgroundColor: "#f5f4f0",
     title: "DFS Dashboard Demo",
     autoHideMenuBar: true,
     show: false,
