@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'" />
+    <title>DFS Dashboard Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <img src="cloudify-logo.svg" alt="Cloudify" class="brand" />
+        <span class="pill">Demo Build · v0.1.0</span>
+      </header>
+
+      <section class="hero">
+        <img src="cloud-icon.png" alt="" class="hero-icon" />
+        <h1>DFS Dashboard — Offline Preview</h1>
+        <p class="lead">
+          A standalone preview of how the offline DFS package will run on a client machine.
+          No internet, no server, no Baserow — bundled and ready.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <span class="dot dot-green"></span>
+          <h2>Runs offline</h2>
+          <p>The full dashboard ships with its data baked in. Works on a plane, on a flight-mode laptop, in any room with no network.</p>
+        </article>
+        <article class="card">
+          <span class="dot dot-blue"></span>
+          <h2>One double-click</h2>
+          <p>A standard Windows installer. The client double-clicks the <code>.exe</code>, accepts a one-time security prompt, and they're in.</p>
+        </article>
+        <article class="card">
+          <span class="dot dot-pink"></span>
+          <h2>Frozen snapshot</h2>
+          <p>Data captured at delivery time. Future re-cuts are a small re-bundle and a new installer — no infrastructure to maintain.</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>Built by <strong>Cloudify</strong> · Powered by Electron</span>
+        <span class="muted">Achieve digital excellence through seamless integration</span>
+      </footer>
+    </main>
+  </body>
+</html>
